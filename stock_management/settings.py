@@ -74,9 +74,13 @@ WSGI_APPLICATION = 'stock_management.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+   'default': {
+        'ENGINE': 'mysql.connector.django',
+        'USER': 'khalsa',
+        'PASSWORD': 'khalsa123@KH',
+        'HOST': '127.0.0.1',#'127.0.0.1',   # Or an IP Address that your DB is hosted on
+        'PORT': '3305',
+        'NAME': 'test',
     }
 }
 
