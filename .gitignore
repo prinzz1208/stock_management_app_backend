@@ -9,6 +9,9 @@ media
 # Backup files # 
 *.bak 
 
+# For Mysql
+.db/*
+
 # If you are using PyCharm # 
 .idea/**/workspace.xml 
 .idea/**/tasks.xml 
