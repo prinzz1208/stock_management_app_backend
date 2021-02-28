@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -75,12 +76,12 @@ WSGI_APPLICATION = 'stock_management.wsgi.application'
 
 DATABASES = {
    'default': {
-        'ENGINE': 'mysql.connector.django',
+        'ENGINE': 'django.db.backends.mysql',
         'USER': 'khalsa',
         'PASSWORD': 'khalsa123@KH',
-        'HOST': '127.0.0.1',#'127.0.0.1',   # Or an IP Address that your DB is hosted on
-        'PORT': '3305',
-        'NAME': 'test',
+        'HOST': 'db',#'127.0.0.1',   # Or an IP Address that your DB is hosted on
+        'PORT': '3306',
+        'NAME': 'stocks',
     }
 }
 

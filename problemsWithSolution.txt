@@ -1,0 +1,9 @@
+=> can't connect to local mysql server through socket '/var/run/mysqld/mysqld.sock' (2) docker
+  -sudo chown -R mysql:mysql /var/lib/mysql /var/run/mysqld
+  - link: https://bestafiko.medium.com/cant-connect-to-local-mysql-server-through-socket-var-run-mysqld-mysqld-sock-2-on-docker-c854638cd2db
+=> ModuleNotFoundError: No module named 'MySQLdb'
+  - docker-compose exec web sh
+  - pip3 freeze > requirements.txt
+  - docker-compose down
+  - docker-compose build
+  - docker-compose up
