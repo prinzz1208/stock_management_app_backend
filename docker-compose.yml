@@ -8,9 +8,9 @@ services:
     environment:
       - MYSQL_PORT=3306 # cannot change this port to other number
       - MYSQL_DATABASE=stocks # name you want for the database
-      - MYSQL_USER="khalsa" # change to whatever username you want
-      - MYSQL_PASSWORD="khalsa123@KH" #change to the password you want for user
-      - MYSQL_ROOT_PASSWORD="khalsa123@KH" #change to good root password
+      - MYSQL_USER=khalsa # change to whatever username you want
+      - MYSQL_PASSWORD=khalsa123@KH #change to the password you want for user
+      - MYSQL_ROOT_PASSWORD=khalsa123@KH #change to good root password
     ports:
       - "3305:3306"
     volumes:
