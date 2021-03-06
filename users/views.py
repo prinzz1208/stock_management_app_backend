@@ -35,7 +35,7 @@ def login(request):
         raise exceptions.AuthenticationFailed('Incorrect Password')
 
     response = Response()
-    token = generateAccessToken(user);
+    token = generateAccessToken(user)
     response.set_cookie(key="jwt", value=token, httponly=True)
     response.data = {
         "jwt": token
